@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!-- saved from url=(0050)http://www.jq22.com/demo/jquery-Sharelink20151012/ -->
+<html lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>登陆丨Sharelink</title>
+<link rel="stylesheet" href="../static/css/style.css">
+</head><body>
+<div class="login-container">
+<h1>ShareLink</h1>
+<div class="connect">
+<p style="left: 0%;">Link the world. Share to world.</p>
+</div>
+<form action="" method="post" id="loginForm" novalidate="novalidate">
+    {% csrf_token %}
+<div>
+<input type="text" name="username" class="username" placeholder="用户名" autocomplete="off" value="admin">
+</div>
+<div>
+<input type="password" name="password" class="password" placeholder="密码" oncontextmenu="return false" onpaste="return false">
+    {{ error }}
+</div>
+<button id="submit" type="submit">登 陆</button>
+</form>
+<a href="/crm/register/">
+<button type="button" class="register-tis">还有没有账号？</button>
+</a>
+</div>
+
+<script src="../static/js/jquery.min.js"></script><script src="../static/js/jquery.min(1).js"></script>
+<script src="../static/js/common.js"></script>
+
+<script src="../static/js/supersized.3.2.7.min.js"></script>
+<script src="../static/js/supersized-init.js"></script>
+
+<script src="../static/js/jquery.validate.min.js"></script>
+<ul id="supersized" class="quality" style="visibility: visible;"><li class="slide-0 prevslide"><a target="_blank"><img src="../static/images/1.jpg" style="width: 1403px; left: 0px; top: -123px; height: 883.89px;"></a>
+</li><li class="slide-1 activeslide" style="visibility: visible; opacity: 1;"><a target="_blank"><img src="../static/images/2.jpg" style="width: 1403px; left: 0px; top: -172px; height: 982.1px;"></a></li><li class="slide-2"><a target="_blank"><img src="../static/images/3.jpg" style="width: 1403px; height: 883.89px; left: 0px; top: -122.5px;"></a></li></ul></body></html>
